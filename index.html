@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navecitas</title>
+    <script src="phaser.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	    <!-- Definir variables globales para las rutas -->
+		   <audio id="background-music" src="assets/music.mp3" preload="auto"></audio>
+    <script>
+        window.assetPaths = {
+            sky: 'assets/sky.png',
+            ship: 'assets/ship.png',
+            enemy: 'assets/robot.png',
+            bullet: 'assets/bullet.png'
+        };
+    </script>
+    <script src="mainAndroid.js"></script>
+
+	    <!-- Agregar las imágenes aquí si es necesario -->
+    <img src="assets/robot.png" id="robotImage" style="display:none;">
+<div class="container" id="phaser-container">
+    
+</div>
+
+
+	
+</body>
+</html>

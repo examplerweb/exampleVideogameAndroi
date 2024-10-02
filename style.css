@@ -1,0 +1,77 @@
+/* Resetear algunos estilos predeterminados */
+body, h1, table {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos generales del body */
+body {
+    background: #000;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+/* Estilos del contenedor principal */
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border: 5px solid #00ff00;
+    box-shadow: 0 0 15px #00ff00;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+
+/* Estilos del título */
+.title {
+    font-size: 2.5em;
+    color: #00ff00;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00, 0 0 20px #00ff00;
+    margin-bottom: 20px;
+}
+
+/* Estilos de la tabla */
+#leaderboard {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
+#leaderboard th, #leaderboard td {
+    border: 1px solid #00ff00;
+    padding: 10px;
+    text-align: center;
+}
+
+#leaderboard th {
+    background: #111;
+    color: #00ff00;
+    text-shadow: 0 0 5px #00ff00;
+}
+
+#leaderboard td {
+    background: #222;
+    color: #fff;
+}
+
+#leaderboard tr:nth-child(even) td {
+    background: #333;
+}
+
+/* Estilos para las imágenes ocultas */
+img {
+    display: none;
+}
+
+/* Agregar un efecto de parpadeo al título */
+@keyframes blink {
+    0% { color: #00ff00; }
+    50% { color: #fff; }
+    100% { color: #00ff00; }
+}
+
+.title {
+    animation: blink 1s infinite;
+}
